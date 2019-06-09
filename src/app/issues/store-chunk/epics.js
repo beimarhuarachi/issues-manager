@@ -19,8 +19,8 @@ export const getIssuesEpic = action$ =>
     ofType(GET_ISSUES),
     debounceTime(100),
     switchMap(
-      ({user, repo}) => {
-        return getIssues(user, repo)
+      ({ payload }) => {
+        return getIssues(payload.user, payload.repo)
           .pipe(
             map(response => getIssuesSuccess(response)),
             catchError(error => of(getIssuesFailed(error))),

@@ -18,6 +18,7 @@ export function issuesReducer(state = initialState, action) {
         ...state,
         loading: true,
         items: [],
+        error: null,
       };
     }
 

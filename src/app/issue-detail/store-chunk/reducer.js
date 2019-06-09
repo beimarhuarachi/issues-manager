@@ -18,6 +18,7 @@ export function issueDetailReducer(state = initialState, action) {
         ...state,
         loading: true,
         issue: {},
+        error: null,
       };
     }
 

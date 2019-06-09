@@ -19,7 +19,8 @@ export const getIssueDetailEpic = action$ =>
     ofType(GET_ISSUE_DETAIL),
     debounceTime(100),
     switchMap(
-      ({user, repo, number}) => {
+      ({ payload }) => {
+        const { user, repo, number } = payload;
         return getIssueDetail(user, repo, number)
           .pipe(
             map(response => getIssueDetailSuccess(response)),
