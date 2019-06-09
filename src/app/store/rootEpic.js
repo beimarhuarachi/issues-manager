@@ -1,5 +1,9 @@
 import { combineEpics } from 'redux-observable';
 
-const rootEpic = combineEpics();
+import { chunkEpics as issuesEpics } from '../issues/store-chunk';
+
+const rootEpic = combineEpics(
+  issuesEpics,
+);
 
 export default rootEpic;
