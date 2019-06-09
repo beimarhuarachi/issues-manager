@@ -1,5 +1,15 @@
 import React from 'react';
 
-const Issues = () => <h1>Issues Page</h1>;
+import IssuesListContainer from './containers/IssuesListContainer';
+import IssuesSelectorFormContainer from './containers/IssuesSelectorFormContainer';
+
+const Issues = () => {
+  return (
+    <div className='issues'>
+      <IssuesSelectorFormContainer/>
+      <IssuesListContainer/>
+    </div>
+  );
+};
 
 export default Issues;

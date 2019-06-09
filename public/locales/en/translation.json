@@ -1,7 +1,26 @@
 {
   "common": {
     "label": {
-      "page-not-found": "Page not Found"
+      "page-not-found": "Page not Found",
+      "header-title": "Github Issues"
+    }
+  },
+  "issues-form": {
+    "label": {
+      "github-user": "Github user",
+      "repo": "Repo"
+    },
+    "action": {
+      "show-issues": "Show Issues"
+    }
+  },
+  "issues": {
+    "label": {
+      "empty-list": "No Found issues for this Repo",
+      "reported-by": "Reported by"
+    },
+    "error": {
+      "get": "There was an error trying to get issues"
     }
   }
 }

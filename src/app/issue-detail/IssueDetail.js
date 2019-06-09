@@ -1,5 +1,10 @@
 import React from 'react';
+import IssueItemContainer from './IssueItemContainer';
 
-const IssueDetail = () => <h1>IssueDetail Page</h1>;
+const IssueDetail = () => (
+  <div className='issue-detail'>
+    <IssueItemContainer/>
+  </div>
+);
 
 export default IssueDetail;
