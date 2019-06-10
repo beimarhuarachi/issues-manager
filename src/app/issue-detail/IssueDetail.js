@@ -1,5 +1,5 @@
 import React from 'react';
-import IssueItemContainer from './IssueItemContainer';
+import IssueItemContainer from './containers/IssueItemContainer';
 
 const IssueDetail = () => (
   <div className='issue-detail'>

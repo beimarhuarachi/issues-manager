@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,9 +6,9 @@ import {
   Redirect,
 } from 'react-router-dom';
 
-import Issues from './issues/Issues';
-import IssueDetail from './issue-detail/IssueDetail';
-import NotFound from './common/NotFound';
+const Issues = lazy(() => import('./issues/Issues'));
+const IssueDetail = lazy(() => import('./issue-detail/IssueDetail'));
+const NotFound = lazy(() => import('./common/NotFound'));
 
 const AppRouter = () => (
   <Router>
