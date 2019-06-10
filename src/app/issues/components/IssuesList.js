@@ -29,7 +29,7 @@ const IssuesList = ({ issuesState }) => {
         {t('issues.error.get')}
       </Alert>
     ) : null;
-  const emptyList = loaded && items.length === 0
+  const emptyList = loaded && !loading && items.length === 0
     ? 
     ( 
       <Alert color="info">

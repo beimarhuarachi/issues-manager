@@ -2,7 +2,8 @@
   "common": {
     "label": {
       "page-not-found": "Page not Found",
-      "header-title": "Github Issues"
+      "header-title": "Github Issues",
+      "none": "None"
     }
   },
   "issues-form": {
@@ -21,6 +22,16 @@
     },
     "error": {
       "get": "There was an error trying to get issues"
+    }
+  },
+  "issue-detail": {
+    "label": {
+      "opened-by": "Opened by",
+      "comments": "comments"
+    },
+    "error": {
+      "no-enough-info": "There is no enough information to get issue detail",
+      "get": "There was an error trying to get issue detail"
     }
   }
 }
